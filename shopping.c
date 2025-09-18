@@ -5,10 +5,10 @@
 int main() {
 	int count = 0;
 	int t = 1;
-	int id[100];
-	int buy[100];
-	int sell[100];
-	int item[100];
+	int id[101];
+	int buy[101];
+	int sell[101];
+	int item[101];
 
 	while (1) {
 		printf("종류를 1부터 100까지 사이로 정하시오.\n");
@@ -17,7 +17,7 @@ int main() {
 	}
 
 	for (int i = 1; i <= count; i++) {
-		id[i-1] = i;
+		id[i] = i;
 		printf("ID: %d, 입고 수량과 당일 판매 수량을 각각 입력하세요.\n", i);
 		scanf("%d %d", &buy[i], &sell[i]);
 		item[i] = buy[i] - sell[i];
