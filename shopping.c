@@ -17,7 +17,7 @@ int main() {
 	}
 
 	for (int i = 1; i <= count; i++) {
-		id[i] = i;
+		id[i-1] = i;
 		printf("ID: %d, 입고 수량과 당일 판매 수량을 각각 입력하세요.\n", i);
 		scanf("%d %d", &buy[i], &sell[i]);
 		item[i] = buy[i] - sell[i];
